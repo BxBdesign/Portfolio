@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: outfit, sans-serif;
+}
+
+:root {
+    --primary: rgb(255, 174, 0);
+    --secondary: rgb(6, 56, 71);
+}
+
+/* body {
+    width: 50%;
+    max-width: 800px;
+    min-width: 480px;
+    margin: 0 auto;
+      } */
+
+section {
+    min-width: 100vh;
+    padding: 10rem 9% 2rem;
+    background-color: var(--secondary);
+}
+
+.description {
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+
+}
+
+h1{
+    margin: 40px;
+    font-size: 4.0rem;
+    }
+
+p {
+    margin: 40px;
+}
+.form{
+    margin: 40px;
+}
+.form input[type="number"]
+{
+    width: 400px;
+    height: 46px;
+    border-radius: 65px;
+    }
+
+button {
+    display: inline-block;
+    background-color: white;
+    border-radius: 65px;
+    color: var(--secondary);
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 200px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 5.0s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+.lastResult{
+    color: white;
+    padding: 3px;
+    }
+.guessSubmit {
+    height: 46px;
+    width: 150px;
+    border-radius: 65px;
+}
+
+label {
+    color: white;
+    
+}

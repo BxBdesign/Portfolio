@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="cssGame.css">
+    <title>Guess</title>
+  </head>
+
+  <body>
+<section class="Guess" id="Guess">
+
+  <div class="description">
+    <h1>Number guessing game</h1>
+    <p>Nous avons sélectionnez un nombre aléatoire entre 1 et 100. 
+      Voyons si vous pouvez le deviner en 10 essais ou moins. 
+      Nous vous notifierons si votre choix est trop élevé ou trop bas.</p>
+  </div>
+
+    <div class="game">
+    <div class="form">
+      <label for="guessField">Entrez votre choix: </label>
+      <input type="number" min="1" max="100" required id="guessField" class="guessField">
+      <!-- <input type="submit" value="Submit guess" class="guessSubmit"> -->
+      <button type="button" class="guessSubmit">Soumettre</button>
+    </div>
+
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+  </div>
+
+  </section>
+
+    <script src="Script.js"></script>
+  </body>
+</html>

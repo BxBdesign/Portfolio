@@ -1,0 +1,75 @@
+*
+{
+    font-family: 'poppins', 'sans serif';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+/* style de couleurs */
+:root {
+    --color-default: #023857;
+    --black: #06223a;
+    --gray1: #3a4455;
+    --main-color: #F28123;
+    --gray2: #2c323b;
+    --blanc: #d1edff;
+}
+html {
+    font-size: 62.3%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--color-default);
+    color: var(--blanc);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    padding: 25px;
+    background: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    color: var(--blanc);
+}
+
+.navbar a{
+    margin-left: 2rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: var(--blanc);
+    transition: .5s;
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-contain h1 {
+    font-size: 5.6rem;
+    color: var(--blanc);
+    font-weight: 700;
+}
+
+.hero-contain h3:nth-last-of-type(2) {
+    margin-bottom: 2rem;
+}
+
