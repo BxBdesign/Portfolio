@@ -64,11 +64,11 @@ section {
     transition: .3s;
 }
 
-.navbar a:hover,
+/* .navbar a:hover,
 .navbar a.active {
     color: var(--main-color);
 
-}
+} */
 
 #menu-icon {
     font-size: 3.6rem;
@@ -143,7 +143,7 @@ span {
     border-radius: 4rem;
     font-size: 1.6rem;
     color: var(--text-color);
-    letter-spacing: .1rem;
+    /* letter-spacing: .1rem; */
     font-weight: 300;
     transition: .5s;
 }
