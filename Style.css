@@ -1,4 +1,4 @@
-*{ 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,12 +9,15 @@
     font-family: 'outfit', 'sans-serif';
 }
 
-:root { /* Style de couleurs */
+:root {
+    /* Style de couleurs */
     --bg-color: #01233a;
     --second-bg-color: #0e1731;
     --text-color: #fff;
     --main-color: #ff8800;
+    --kevmax_color: #24212935;
     --dark-blue: #081e38;
+    --second-color: #004872;
 }
 
 html {
@@ -22,12 +25,14 @@ html {
     overflow-x: hidden;
 }
 
-body { /* paramètres généraux de la page */
+body {
+    /* paramètres généraux de la page */
     background: var(--bg-color);
     color: var(--text-color);
 }
 
-section { /* Paramètres par défaut de mes sections */
+section {
+    /* Paramètres par défaut de mes sections */
     min-width: 100vh;
     padding: 10rem 9% 2rem;
 }
@@ -80,12 +85,12 @@ section { /* Paramètres par défaut de mes sections */
 }
 
 .home-img img {
-width: 55vh;
+    width: 55vh;
 }
 
 .home-content h3 {
-font-size: 3.2rem;
-font-weight: 700;
+    font-size: 3.2rem;
+    font-weight: 700;
 }
 
 .home-content h3:nth-of-type(2) {
@@ -105,7 +110,9 @@ font-weight: 700;
 
 span {
     color: var(--main-color);
+
 }
+
 
 .social-media a {
     display: inline-flex;
@@ -186,7 +193,6 @@ span {
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
-
 }
 
 .services-container .service-box {
@@ -218,48 +224,169 @@ span {
     margin: 1rem 0 3rem;
 }
 
-.portfolio 
+.portfolio h2 {
+    margin-bottom: 4rem;
+}
 
-.potfolio-container {
+.portfolio-container {
     display: flex;
-    border-radius: 2rem;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 2rem;
+    animation: infinite;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.first_portfolio_container_content {
+    display: flex;
+    gap: 2rem;
+    transform: translateX(0);
+    animation: flip infinite 30s normal;
+
+    /* min-width: 250%; */
+
+}
+
+.last_portfolio_container_content {
+    display: flex;
+    /* position: absolute; */
+    transform: translateX(600px);
+    gap: 2rem;
+    animation: flip infinite  30s normal;
+
+
 }
 
 .image-portfolio {
-    border-radius: 2rem;
-    background-color: var(--main-color);
-    width: 400px;
-    height: 400px;
+    width: 380px;
+    height: 380px;
     overflow: hidden;
-    border-radius: 2rem;
-    position: relative;
-}
-
-.description-projet {
-    position: absolute;
-    height: 20%;
-    width: 100%;
-    bottom: 0;
-    padding: 2rem;
-    background: #00000095;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.description-projet h3 {
-    font-size: 2.4rem;
+    /* border: .1rem solid var(--bg-color); */
+    border-radius: 1.4rem;
+    /* position: relative; */
+    transition: .5s ease;
 }
 
 .image-portfolio img {
-    object-fit: fill;
-    /* background-color: var(--main-color); */
-    width: 400px;
-    height: 400px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-container .image-portfolio {
+    /* flex: 1 1 30rem; */
+    background: var(--dark-blue);
+    /* padding: 3rem 2rem 4rem; */
+    text-align: center;
+}
+
+.portfolio-container .image-portfolio:hover {
+    box-shadow: 0 0 1rem var(--dark-blue);
+    transform: scale(1.02);
+}
+
+.Contact h2 {
+    padding: 5rem;
+}
+
+.contactezmoi {
+    display: flex;
 }
 
 
+form {
+    background-color: var(--second-color);
+    display: grid;
+    color: var(--text-color);
+    width: 700px;
+    border-radius: 10px;
+    padding: 30px 30px 30px 30px;
+}
+
+form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 80px;
+    /* margin-top: 40px; */
+}
+
+/* form div > label {
+    margin-bottom: 5px;
+    font-weight: 300;
+    font-size: 12px;
+} */
+
+form div > input, form div > selector, form div > textarea {
+    background: rgba(255, 255, 255, 0.534);
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 200;
+    width: 100%;
+}
+
+form div > input, form div > select {
+    height: 52px;
+    padding: 0 10px;
+}
+
+form div > select {
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form div > textarea {
+    height: 195px;
+    padding: 15px 0px 0px 10px;
+}
+
+form div > input::placeholder, form div > textarea::placeholder {
+    color: white;
+}
+
+form div > select:invalid {
+    color: var(--second-color);
+}
+
+form div > select:invalid:hover {
+    color: var(--text-color);
+    background-color: #01233a;
+}
+
+form div > select option {
+    color: var(--dark-blue);
+}
+
+form div > select option {
+    background: var(--text-color);
+    font-size: 16px;
+    margin: 10px;
+}
+
+.DG {
+    color: var(--main-color);
+}
+
+form div:last-child {
+    align-items: center;
+    justify-content: end;
+    /* margin-top: 20px; */
+}
+
+form button {
+    display: inline;
+    white-space: nowrap;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: 300;
+    transition: .5s;
+}
