@@ -296,6 +296,11 @@ span {
 
 .contactezmoi {
     display: flex;
+    gap: 20px;
+}
+
+.contactezmoi form {
+    width: 50%;
 }
 
 
@@ -359,6 +364,19 @@ form div > select:invalid:hover {
     background-color: #01233a;
 }
 
+.imgcontact {
+    border: 1px solid red;
+    width: 50%;
+    display: grid;
+
+}
+
+.imgtext {
+    font-size: 16px;
+    font-weight: 200;
+    text-align: center;
+}
+
 form div > select option {
     color: var(--dark-blue);
 }
@@ -377,6 +395,14 @@ form div:last-child {
     align-items: center;
     justify-content: end;
     /* margin-top: 20px; */
+}
+
+.imgin {
+    height: 100%;
+    object-fit: contain;
+    align-items: center;
+    margin: auto;
+    border: 1px solid white;
 }
 
 form button {
