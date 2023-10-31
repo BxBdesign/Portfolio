@@ -161,15 +161,7 @@
                     <div>
                         <input type="email" id="email" name="email" placeholder="Votre adresse" required>
                     </div>
-                    <div class="menu-select">
-                        <select name="sujet" id="sujet" required>
-                            <option value="" disabled selected hidden>Quel est votre besoin ?</option>
-                                <option value="DesignGraphic"><a>Design Graphique</a></option>
-                                <option value="Design UI/UX">Design UI/UX</option>
-                                <option value="Illustration">Illustration</option>
-                                <option value="Autre">Autre</option>
-                        </select>
-                    </div>
+                    
                     <div>
                         <textarea name="message" id="message" placeholder="écrivez votre besoin" required></textarea>
                     </div>
@@ -178,6 +170,7 @@
                         <button type="submit">Envoyer mon message</button>
                     </div>
             </form>
+           
         <div class="imgcontact"> <!--image side contact-->
             <div class="imgin">
                 <img src="images/Cercle_stroke.png" alt="">
@@ -185,6 +178,22 @@
             <p class="imgtext">Si un projet vous tient à cœur ou si vous aspirez à des designs UI/UX exceptionnels,
                 ne cherchez pas plus loin. Contactez-moi et ensemble.<br> Nous transformerons vos rêves en réalité !
             </p>
+        </div>
+    </div>
+    <div class="menu-select">
+        <div class="SelectCustomInput">
+            <div class="selectItemValue">
+                
+            </div>
+            <div class="arrowSelected" id="selctionButton">
+                <i  class='bx bx-chevron-down selectionIcon'></i>
+            </div>
+        </div>
+        <div class="optionCustomSelect desactived">
+            <div class="option-selected">choix 1</div>
+            <div class="option-selected">Choix 2</div>
+            <div class="option-selected">Choix 3</div>
+            <div class="option-selected">Choix 4</div>
         </div>
     </div>
     </section>
